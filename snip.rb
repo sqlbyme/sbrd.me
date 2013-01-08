@@ -1,4 +1,4 @@
-%w(rubygems sinatra dm-core dm-timestamps uri).each  { |lib| require lib}
+%w(rubygems sinatra data_mapper uri haml).each  { |lib| require lib}
 
 get '/' do haml :index end
 
@@ -9,13 +9,15 @@ post '/' do
   haml :index
 end
 
-get '/:snipped' do redirect Url[params[:snipped].to_i(36)].original end
+get '/:snipped' do redirect Url.first(:id => params[:snipped] ).original end 
+
 
 error do haml :index end
 
-use_in_file_templates!
+#use_in_file_templates!
 
-DataMapper.setup(:default, ENV['DATABASE_URL'] || 'mysql://root:root@localhost/snip')
+DataMapper::Logger.new($stdout, :debug)
+DataMapper.setup(:default, ENV['DATABASE_URL'] || 'mysql://root:password@localhost/snip')
 class Url
   include DataMapper::Resource
   property  :id,          Serial
@@ -23,6 +25,9 @@ class Url
   property  :created_at,  DateTime  
   def snipped() self.id.to_s(36) end  
 end
+DataMapper.finalize
+#DataMapper.auto_migrate!
+
 
 __END__
 
