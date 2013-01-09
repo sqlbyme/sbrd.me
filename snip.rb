@@ -9,7 +9,7 @@ post '/' do
   raise "Invalid URL" unless uri.kind_of? URI::HTTP or uri.kind_of? URI::HTTPS
   url = Url.first_or_create(:original => uri.to_s)
   
-  { 'url' => '$HOST' + url.snipped }.to_json
+  { 'url' => ENV['HOST'] + url.snipped }.to_json
 end
 
 get '/:url' do redirect Url.first(:id => params[:url].to_i(36) ).original, 301 end 
