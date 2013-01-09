@@ -16,4 +16,4 @@ DataMapper.finalize
 # The DataMapper.auto_migrate command will only be used the first time we run the app
 # on heroku in order to initialiaze the db. Once this is done we no longer need this line
 # and it shoudl be removed.
-#DataMapper.auto_migrate!
+DataMapper.auto_migrate!
