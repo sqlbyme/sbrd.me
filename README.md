@@ -1,4 +1,4 @@
-# sbrd.me - Url Shortner for Songbird.me Service (and other stuff)
+# sbrd.me - Url Minifier for Songbird.me
 
 ## Dependencies
 * You will need to setup and rvm environment running ruby-1.9.3-p134.
