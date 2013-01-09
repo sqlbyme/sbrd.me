@@ -40,8 +40,8 @@ Sample request with curl:
 
     curl --data 'http://www.songbird.me' http://sbrd.me
   
-Valid Response:
+##### Valid Response:
     {
-        "url" : "f"
+        "url" : "http://sbrd.me/f"
     }
     Status Code: 200
