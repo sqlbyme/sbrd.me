@@ -55,7 +55,7 @@ original URL and generate a 301 redirect to the original URL.
 
   Sample request with curl:
   
-    curl http://sbrd.me/d
+    curl http://sbrd.me/d -v
     
   Valid Response:
   
