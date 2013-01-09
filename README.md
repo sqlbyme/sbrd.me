@@ -38,10 +38,10 @@ a key labeled 'original' and the value of this key must be a valid URI.
 
 Sample request with curl:
 
-  curl --data 'http://www.songbird.me' http://sbrd.me
+    curl --data 'http://www.songbird.me' http://sbrd.me
   
 Valid Response:
-{
-  "url" : "f"
-}
-Status Code: 200
+    {
+        "url" : "f"
+    }
+    Status Code: 200
