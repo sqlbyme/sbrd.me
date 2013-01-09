@@ -31,16 +31,16 @@ See the section on versioning for details on currently supported versions.
   
 #### API Features
 
-##### Url Shortner
+##### Url Minifier
 
 A client may shorten any valid url by submitting a POST request to the service.  The POST request must contain 
 a key labeled 'original' and the value of this key must be a valid URI.
 
-Sample request with curl:
+ Sample request with curl:
 
     curl --data 'http://www.songbird.me' http://sbrd.me
   
-##### Valid Response:
+ Valid Response:
     {
         "url" : "http://sbrd.me/f"
     }
