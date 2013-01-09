@@ -1,9 +1,9 @@
 # sbrd.me - Url Minifier for Songbird.me
 
 ## Dependencies
-* You will need to setup an rvm environment running ruby-1.9.3-p134.
+* You will need to setup an rvm environment running ruby-1.9.3-p194.
   * You will also need to create a gemset called `sbrd.me`
-    * note: make sure you remember to issue `rvm use ruby-1.9.3-p134@sbrd.me` from the command line.
+    * note: make sure you remember to issue `rvm use ruby-1.9.3-p194@sbrd.me` from the command line.
   
 ## Setup 
 1. Install the dependencies
