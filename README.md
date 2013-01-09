@@ -46,3 +46,24 @@ a key labeled 'original' and the value of this key must be a valid URI.
         "url" : "http://sbrd.me/f"
     }
     Status Code: 200
+
+##### Minified Url Redirector
+
+A client may submit a minified url back to the service in order to be redirected back to the original url contained
+within the database.  Clients need only to submit a parameter with the GET request and the system will lookup the 
+original URL and generate a 301 redirect to the original URL.
+
+  Sample request with curl:
+  
+    curl http://sbrd.me/d
+    
+  Valid Response:
+  
+    < HTTP/1.1 301 Moved Permanently
+    < X-Frame-Options: SAMEORIGIN
+    < X-XSS-Protection: 1; mode=block
+    < X-Content-Type-Options: nosniff
+    < Content-Type: text/html;charset=utf-8
+    < Location: http://www.feco.net/
+    < Content-Length: 0
+    < Connection: keep-alive
