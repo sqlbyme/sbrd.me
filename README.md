@@ -1,8 +1,8 @@
 # sbrd.me - Url Minifier for Songbird.me
 
 ## Dependencies
-* You will need to setup and rvm environment running ruby-1.9.3-p134.
-  * You will also need to create a gemset called sbrd.me
+* You will need to setup an rvm environment running ruby-1.9.3-p134.
+  * You will also need to create a gemset called `sbrd.me`
     * note: make sure you remember to issue `rvm use ruby-1.9.3-p134@sbrd.me` from the command line.
   
 ## Setup 
@@ -24,9 +24,10 @@ See the section on versioning for details on currently supported versions.
 - GET requests must include a url key in order for a redirect to be generated. 
 
 #### Summary of the HTTP Status Codes:
-  200 - OK
-  400 - Bad request
-  500 - Server Error
+  
+    200 - OK
+    400 - Bad request
+    500 - Server Error
   
 #### API Features
 
