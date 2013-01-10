@@ -8,7 +8,6 @@ configure :test do
   DataMapper.setup(:default, 'mysql://root:password@localhost/sbrdme_test')
   DataMapper.auto_migrate!
 end
-DataMapper.auto_migrate!
 DataMapper.finalize
 
 get '/' do redirect 'http://songbird.me', 301 end
