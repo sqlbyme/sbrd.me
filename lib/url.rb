@@ -6,7 +6,7 @@ class Url
   property  :id,          Serial
   property  :original,    String, :length => 255
   property  :created_at,  DateTime  
-  def sbrdme() self.id.to_s(36) end  
+  def out() self.id.to_s(36) end  
 end
 
 

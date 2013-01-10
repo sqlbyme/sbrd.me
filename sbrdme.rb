@@ -19,10 +19,10 @@ post '/' do
   raise "Invalid URL" unless uri.kind_of? URI::HTTP or uri.kind_of? URI::HTTPS
   url = Url.first_or_create(:original => uri.to_s)
 
-  { 'url' => 'http://' + host + '/' + url.sbrdme }.to_json
+  { 'url' => 'http://' + host + '/' + url.out }.to_json
   
   configure :test do
-    { 'url' => 'http://' + host + ':8000/' + url.sbrdme }.to_json
+    { 'url' => 'http://' + host + ':8000/' + url.out }.to_json
   end
 
 end
