@@ -49,7 +49,7 @@ a key labeled 'original' and the value of this key must be a valid URI.
  Valid Response:
  
     {
-        "url" : "http://www.sbrd.me/f"
+        "url" : "http://www.sbrd.me/1"
     }
     Status Code: 200
     
