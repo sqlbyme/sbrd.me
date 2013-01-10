@@ -8,7 +8,7 @@ class Url
   property  :id,          Serial
   property  :original,    String, :length => 255
   property  :created_at,  DateTime  
-  def snipped() self.id.to_s(36) end  
+  def sbrdme() self.id.to_s(36) end  
 end
 
 DataMapper.finalize

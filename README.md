@@ -38,12 +38,23 @@ a key labeled 'original' and the value of this key must be a valid URI.
 
  Sample request with curl:
 
-    curl --data 'http://www.songbird.me' http://sbrd.me
+    curl --data 'original=http://www.songbird.me' http://www.sbrd.me
   
  Valid Response:
  
     {
-        "url" : "http://sbrd.me/f"
+        "url" : "http://www.sbrd.me/f"
+    }
+    Status Code: 200
+    
+  Sample request with curl to Staging:
+  
+    curl --data 'original=http://www.songbird.me/' http://staging.sbrd.me
+    
+  Valid Response:
+  
+    {
+        "url" : "http://staging.sbrd.me/1"
     }
     Status Code: 200
 
