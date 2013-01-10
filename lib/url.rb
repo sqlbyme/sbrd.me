@@ -1,7 +1,5 @@
 require 'data_mapper'
 
-DataMapper::Logger.new($stdout, :debug)
-DataMapper.setup(:default, ENV['DATABASE_URL'] || 'mysql://root:password@localhost/snip')
 
 class Url
   include DataMapper::Resource
@@ -11,4 +9,4 @@ class Url
   def snipped() self.id.to_s(36) end  
 end
 
-DataMapper.finalize
+
