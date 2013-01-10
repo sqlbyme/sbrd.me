@@ -58,6 +58,17 @@ a key labeled 'original' and the value of this key must be a valid URI.
     }
     Status Code: 200
 
+  Sample request with curl to Localhost:
+
+      curl --data 'original=http://www.songbird.me/' http://localhost:8000
+
+  Valid Response:
+
+      {
+          "url" : "http://localhost:8000/1"
+      }
+      Status Code: 200
+
 ##### Minified Url Redirector
 
 A client may submit a minified url back to the service in order to be redirected back to the original url contained
