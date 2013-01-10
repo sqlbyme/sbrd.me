@@ -72,15 +72,19 @@ original URL and generate a 301 redirect to the original URL.
 
   Sample request with curl:
   
-    curl http://sbrd.me/d -v
+    curl http://www.sbrd.me/1 -v
     
   Valid Response:
   
     < HTTP/1.1 301 Moved Permanently
-    < X-Frame-Options: SAMEORIGIN
-    < X-XSS-Protection: 1; mode=block
-    < X-Content-Type-Options: nosniff
     < Content-Type: text/html;charset=utf-8
-    < Location: http://www.feco.net/
+    < Location: http://www.songbird.me
+    < Server: thin 1.2.7 codename No Hup
+    < X-Content-Type-Options: nosniff
+    < X-Frame-Options: SAMEORIGIN
+    < X-Xss-Protection: 1; mode=block
     < Content-Length: 0
     < Connection: keep-alive
+    < 
+
+
