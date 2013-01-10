@@ -4,10 +4,13 @@ require_relative 'lib/url.rb'
 
 DataMapper::Logger.new($stdout, :debug)
 DataMapper.setup(:default, ENV['DATABASE_URL'] || 'mysql://root:password@localhost/sbrdme')
+
 configure :test do
   DataMapper.setup(:default, 'mysql://root:password@localhost/sbrdme_test')
   DataMapper.auto_migrate!
 end
+
+#DataMapper.auto_migrate!
 DataMapper.finalize
 
 get '/' do redirect 'http://songbird.me', 301 end
@@ -18,12 +21,8 @@ post '/' do
   uri = URI::parse(params[:original])
   raise "Invalid URL" unless uri.kind_of? URI::HTTP or uri.kind_of? URI::HTTPS
   url = Url.first_or_create(:original => uri.to_s)
-
-  { 'url' => 'http://' + host + '/' + url.out }.to_json
   
-  configure :test do
-    { 'url' => 'http://' + host + ':8000/' + url.out }.to_json
-  end
+   { 'url' => 'http://' + host + '/' + url.out }.to_json
 
 end
 
