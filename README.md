@@ -31,6 +31,12 @@ See the section on versioning for details on currently supported versions.
   
 #### API Features
 
+##### API Endpoints
+
+  * Staging - http://staging.sbrd.me
+  
+  * Priduction - http://www.sbrd.me
+
 ##### Url Minifier
 
 A client may shorten any valid url by submitting a POST request to the service.  The POST request must contain 
