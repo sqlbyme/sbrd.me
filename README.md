@@ -32,7 +32,7 @@ See the section on versioning for details on currently supported versions.
     400 - Bad request
     500 - Server Error
   
-#### API Features
+## API Features
 
 ##### API Endpoints
 
