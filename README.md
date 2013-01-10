@@ -35,7 +35,7 @@ See the section on versioning for details on currently supported versions.
 
   * Staging - http://staging.sbrd.me
   
-  * Priduction - http://www.sbrd.me
+  * Production - http://www.sbrd.me
 
 ##### Url Minifier
 
