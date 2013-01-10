@@ -2,7 +2,7 @@
 
 require_relative 'lib/url.rb'
 
-DataMapper::Logger.new($stdout, :debug)
+DataMapper::Logger.new($stdout, :info)
 DataMapper.setup(:default, ENV['DATABASE_URL'] || 'mysql://root:password@localhost/sbrdme')
 
 configure :test do
