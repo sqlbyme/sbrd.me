@@ -1,3 +1,3 @@
-require 'sinatra' 
-require './snip'
+require 'sinatra'
+require './sbrdme'
 run Sinatra::Application
