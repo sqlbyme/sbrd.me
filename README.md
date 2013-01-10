@@ -9,7 +9,7 @@
 1. Install the dependencies
 2. Run `gem install bundler`
 3. Run `bundle install`
-4. Run `bundle exec rackup config.ru -p 8000`
+4. Run `bundle exec rackup -s thin -p 8000`
 
 ## API Spec for Web based clients
 
