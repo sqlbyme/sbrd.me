@@ -8,8 +8,7 @@ gem 'thin', '1.2.7'
 gem 'data_mapper', '1.2.0'
 gem 'dm-mysql-adapter', '1.2.0'
 
-#setup the formatting/output gems
-gem 'haml', '3.1.7'
+gem "rake", "~> 10.0.3"
 
 group :test do
   gem 'rspec', '2.12.0'
