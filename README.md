@@ -29,7 +29,7 @@ See the section on versioning for details on currently supported versions.
 #### Summary of the HTTP Status Codes:
   
     200 - OK
-    400 - Bad request
+    404 - Bad request - we return a custom message
     500 - Server Error
   
 ## API Features
