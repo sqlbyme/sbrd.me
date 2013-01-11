@@ -12,7 +12,7 @@
 4. Run `bundle exec rackup -s thin -p 8000`
 
 ## Tests
-1. Run `RACK_ENV=test bundle exec rspec spec/app.rb`
+1. Run `RACK_ENV=test bundle exec rake spec`
 
 ## API Spec for Web based clients
 
