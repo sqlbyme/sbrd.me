@@ -29,6 +29,8 @@ end
 get '/' do redirect 'http://songbird.me', 301 end
 
 get '/firstrun' do redirect 'http://songbird.me', 301 end
+  
+get '/firstrun/' do redirect 'http://songbird.me', 301 end
 
 post '/' do
   content_type :json
