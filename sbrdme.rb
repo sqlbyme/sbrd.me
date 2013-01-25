@@ -27,6 +27,8 @@ not_found do
 end
 
 get '/*' do redirect 'http://songbird.me', 301 end
+  
+get '/client*' do redirect 'http://www.amazon.com/MP3-Music-Download/b/?_encoding=UTF8&node=163856011&tag=songbirdme-20&linkCode=ur2&camp=1789&creative=390957', 301 end
 
 post '/' do
   content_type :json
