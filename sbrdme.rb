@@ -26,11 +26,7 @@ not_found do
   'The page you are looking for does not exist.'
 end
 
-get '/' do redirect 'http://songbird.me', 301 end
-
-get '/firstrun' do redirect 'http://songbird.me', 301 end
-  
-get '/firstrun/' do redirect 'http://songbird.me', 301 end
+get '/*' do redirect 'http://songbird.me', 301 end
 
 post '/' do
   content_type :json
