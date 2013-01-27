@@ -90,4 +90,42 @@ original URL and generate a 301 redirect to the original URL.
     < Connection: keep-alive
     < 
 
+## Branches
 
+This repo consist of three branches, they are:
+  1. checkin
+  2. 7digital
+  3. birdhouse
+
+The branches correspond to apps running at heroku, each with a slightly different version of the sbrdme.rb file.
+We use the sbrdme platform to act as a router for two of the Songbird Classic Desktop legacy apps. 7digital refers 
+to the old 7digital music store which used to be available to users of the Classic Desktop. Birdhouse refers to 
+the old startup url for first time users of the Classic Desktop application.  Since there are specific urls which
+these apps use it was preferable to just create separate apps at heroku to handle the routing requests. Since the
+base code was very similar it was simplest to just branch off of checkin and then fine tune the routes for each 
+application.  Then the appropriate apps were created at heroku and each branch pushed to the master for the app.
+To push to each app you'll need to do the following:
+
+  sbrdme-staging:
+    git remote add staging git@heroku.com:sbrdme-staging.git
+    git push staging checkin:master
+    
+  sbrdme-producion:
+    git remote add production git@heroku.com:sbrdme-production.git
+    git push production checkin:master
+    
+  sbrdme-7digital-staging
+    git remote add 7digital-staging git@heroku.com:sbrdme-7digital-staging.git
+    git push 7digital-staging checkin:master
+    
+  sbrdme-7digital-production
+    git remote add 7digital-production git@heroku.com:sbrdme-7digital-production.git
+    git push 7digital-production checkin:master
+    
+  sbrdme-birdhouse-staging
+    git remote add birdhouse-staging git@heroku.com:sbrdme-birdhouse-staging.git
+    git push birdhouse-staging checkin:master
+    
+  sbrdme-birdhouse-production
+    git remote add birdhouse-production git@heroku.com:sbrdme-birdhouse-production.git
+    git push birdhouse-production checkin:master
