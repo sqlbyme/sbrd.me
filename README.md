@@ -118,16 +118,16 @@ To push to each app you'll need to do the following:
     
 ##### sbrdme-7digital-staging
       git remote add 7digital-staging git@heroku.com:sbrdme-7digital-staging.git
-      git push 7digital-staging checkin:master
+      git push 7digital-staging 7digital:master
     
 ##### sbrdme-7digital-production
       git remote add 7digital-production git@heroku.com:sbrdme-7digital-production.git
-      git push 7digital-production checkin:master
+      git push 7digital-production 7digital:master
     
 ##### sbrdme-birdhouse-staging
       git remote add birdhouse-staging git@heroku.com:sbrdme-birdhouse-staging.git
-      git push birdhouse-staging checkin:master
+      git push birdhouse-staging birdhouse:master
     
 #####sbrdme-birdhouse-production
       git remote add birdhouse-production git@heroku.com:sbrdme-birdhouse-production.git
-      git push birdhouse-production checkin:master
+      git push birdhouse-production birdhouse:master
