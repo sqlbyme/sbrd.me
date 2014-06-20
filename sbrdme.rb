@@ -10,7 +10,10 @@ configure :test do
   DataMapper.auto_migrate!
 end
 
+# We need to comment out the DataMapper.auto_migrate! function call because this
+# function is only called once to initialize the DB.
 #DataMapper.auto_migrate!
+
 DataMapper.finalize
 
 error do
