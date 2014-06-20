@@ -134,7 +134,7 @@ To push to each app you'll need to do the following:
 
 ## License
 
-      This application is released under the MIT license:
+This application is released under the MIT license:
 
 * http://www.opensource.org/licenses/MIT
 
